@@ -6,7 +6,7 @@ The print preview will crash the app. May take several refreshes and attempts du
 
 Explain: 
 
-There is a conditional event listner with a short timer if the share preview is open, at which point the page contents is cleared.
+There is a conditional event listner with a short timer if the print preview is open, at which point the page contents is cleared.
 
 the amount of total pages will change, and this triggers a kernel adress (0x8) to be called, which is then blocked and the application is terminated.
 
