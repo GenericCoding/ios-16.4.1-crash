@@ -8,7 +8,7 @@ Explain:
 
 There is a conditional event listner with a short timer if the print preview is open, at which point the page contents is cleared.
 
-the amount of total pages will change, and this triggers a kernel adress (0x8) to be called, which is then blocked and the application is terminated.
+the amount of total pages will change, and this triggers a out of bounds address reference (0x8) to be called, which is then blocked and the application is terminated.
 
 Lorem Ipsum is used to meet the condition of the initial print total number of pages being greater (181~, padded to add time to condition), than the number which it is changed to when the page is cleared. (1)
 Source commit: 
